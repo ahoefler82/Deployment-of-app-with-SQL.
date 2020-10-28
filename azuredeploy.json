@@ -84,21 +84,11 @@
       }
     },
     {
-      "name": "string",
-      "type": "Microsoft.Sql/servers/databases/securityAlertPolicies",
-      "apiVersion": "2018-06-01-preview",
+      "name": "SecurityAlertPolicy",
+      "type": "Microsoft.Sql/servers/securityAlertPolicies",
+      "apiVersion": "2020-02-02-preview",
       "properties": {
-        "state": "string",
-        "disabledAlerts": [
-        "string"
-        ],
-        "emailAddresses": [
-         "string"
-        ],
-        "emailAccountAdmins": "boolean",
-        "storageEndpoint": "string",
-        "storageAccountAccessKey": "string",
-        "retentionDays": "integer"
+              "state": "Enabled"
       }
     },
     {
