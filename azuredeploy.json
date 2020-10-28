@@ -127,6 +127,16 @@
             "endIpAddress": "0.0.0.0"
           }
         },
+      "resources": [
+        {
+           "apiVersion": "2020-02-02-preview",
+           "type": "securityAlertPolicies",
+           "name": "default",
+           "properties": {
+                   "state": "Enabled"
+                        }
+        }
+                  ],        
         {
           "name": "[parameters('D1')]",
           "type": "databases",
