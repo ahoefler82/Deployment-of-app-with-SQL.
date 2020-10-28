@@ -18,6 +18,7 @@ steps:
      cat changes_latest.txt
      data=$(cat changes_latest.txt | while read line; do echo $line; done)
      data=$(echo $data  | tr ' ' ',')
+     #ls $(Build.Repository.LocalPath)
      docker run -v $(Build.Repository.LocalPath):/data mcafeemvision/shift-left-aws:1.2.0 $data $MVISION_USERNAME $MAPPED_ENV_VAR "/data" $CLOUD_SERVICE_PROVIDER $ENVIRONMENT
   env:
     MAPPED_ENV_VAR: $(MVISION_PASSWORD)
